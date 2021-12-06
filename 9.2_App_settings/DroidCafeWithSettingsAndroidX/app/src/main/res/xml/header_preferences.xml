@@ -17,19 +17,19 @@
 <androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Preference
-        app:fragment="me.mahakagg.droidcafewithsettingsandroidx.SettingsActivity$GeneralFragment"
+        app:fragment="me.mahakagg.droidcafewithsettingsandroidxhw.SettingsActivity$GeneralFragment"
         app:icon="@drawable/general_info"
         app:key="general_header"
         app:title="@string/general_header" />
 
     <Preference
-        app:fragment="me.mahakagg.droidcafewithsettingsandroidx.SettingsActivity$MessagesFragment"
+        app:fragment="me.mahakagg.droidcafewithsettingsandroidxhw.SettingsActivity$MessagesFragment"
         app:icon="@drawable/messages"
         app:key="notification_header"
         app:title="@string/notification_header" />
 
     <Preference
-        app:fragment="me.mahakagg.droidcafewithsettingsandroidx.SettingsActivity$SyncFragment"
+        app:fragment="me.mahakagg.droidcafewithsettingsandroidxhw.SettingsActivity$SyncFragment"
         app:icon="@drawable/sync"
         app:key="sync_header"
         app:title="@string/sync_header" />

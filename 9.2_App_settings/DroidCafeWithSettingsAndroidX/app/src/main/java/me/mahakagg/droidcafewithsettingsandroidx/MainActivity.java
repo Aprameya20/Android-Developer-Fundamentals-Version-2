@@ -1,4 +1,4 @@
-package me.mahakagg.droidcafewithsettingsandroidx;
+package me.mahakagg.droidcafewithsettingsandroidxhw;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,7 +14,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "me.mahakagg.droidcafewithsettingsandroidx.extra.MESSAGE";
+    public static final String EXTRA_MESSAGE = "me.mahakagg.droidcafewithsettingsandroidxhw.extra.MESSAGE";
     private String mOrderMessage;
 
     @Override
@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         PreferenceManager.setDefaultValues(this, R.xml.notification_preferences, false);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         String marketPref = sharedPreferences.getString("sync_frequency", "-1");
-        displayToast(marketPref);
+        String deliveryMethod = sharedPreferences.getString("delivery_list", "Same day messenger service");
+        displayToast("Market is " + marketPref + " and delivery method is " + deliveryMethod);
     }
 
     public void showDonutOrder(View view) {
@@ -89,6 +90,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displayToast(String string) {
-        Toast.makeText(getApplicationContext(), string, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), string, Toast.LENGTH_LONG).show();
     }
 }

@@ -1,4 +1,4 @@
-package me.mahakagg.droidcafewithsettingsandroidx;
+package me.mahakagg.droidcafewithsettingsandroidxhw;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package me.mahakagg.droidcafewithsettingsandroidx;
+package me.mahakagg.droidcafewithsettingsandroidxhw;
 
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBar;

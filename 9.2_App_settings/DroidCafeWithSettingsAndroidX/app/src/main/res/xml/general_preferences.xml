@@ -21,4 +21,12 @@
         app:useSimpleSummaryProvider="true"
         app:title="@string/pref_title_add_friends_to_messages" />
 
+    <ListPreference
+        app:defaultValue="Same day messenger service"
+        app:entries="@array/pref_delivery_titles"
+        app:key="delivery_list"
+        app:useSimpleSummaryProvider="true"
+        app:entryValues="@array/pref_delivery_titles"
+        app:title="@string/choose_delivery_method" />
+
     </androidx.preference.PreferenceScreen>
